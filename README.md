@@ -2,6 +2,8 @@
 
 ## Ejercicio 1
 
+Cada 120 fotogramas, el objeto cambia su color a uno aleatorio y se mueve a una nueva posición aleatoria dentro de un rango de 10 unidades en los ejes X, Y y Z.
+
 ```csharp
 using UnityEngine;
 
@@ -38,6 +40,8 @@ public class Ej_1_Color : MonoBehaviour
 
 ## Ejercicio 2
 
+Calcula y muestra en la consola la magnitud de dos vectores, el ángulo entre ellos, la distancia que los separa y cuál de los dos está más alto según su componente Y.
+
 ```csharp
 using UnityEngine;
 
@@ -72,6 +76,8 @@ public class Ej_2_Pos : MonoBehaviour
 
 ## Ejercicio 3
 
+Al iniciar la escena, muestra en la consola la posición actual del objeto (por ejemplo, una esfera).
+
 ```csharp
 public class Ej_3 : MonoBehaviour
 {
@@ -83,6 +89,8 @@ public class Ej_3 : MonoBehaviour
 ```
 
 ## Ejercicio 4
+
+Encuentra los objetos con las etiquetas `"Cube"` y `"Cylinder"`, y calcula la distancia entre el objeto actual (por ejemplo, una esfera) y cada uno de ellos, mostrando los resultados en consola.
 
 ```csharp
 using UnityEngine;
@@ -107,6 +115,8 @@ public class Ej_4 : MonoBehaviour
 ```
 
 ## Ejercicio 5
+
+Cada vez que se presiona la barra espaciadora, el objeto se mueve a la posición de uno de los tres objetos asignados. Va alternando entre ellos en orden secuencial.
 
 ```csharp
 using UnityEngine;
@@ -146,6 +156,9 @@ public class Ej_5 : MonoBehaviour
 
 ## Ejercicio 6
 
+Cuando se presionan las teclas de flecha, se muestra en consola el valor de movimiento calculado en función de la velocidad y la dirección presionada (sin mover realmente el objeto).
+
+
 ```csharp
 using UnityEngine;
 
@@ -183,10 +196,17 @@ public class Ej_6 : MonoBehaviour
 
 ## Ejercicio 7
 
-```csharp
-```
+1. En Unity, **Edit → Project Settings → Input Manager**.
+2. Expande la lista de **Axes**.
+3. Duplica una entrada existente (por ejemplo, “Fire1”) y cámbiale el nombre a **“Disparo”**.
+4. En la propiedad **Positive Button**, escribe la tecla **`h`** (minúscula).
+5. Guarda los cambios.
+
+Ahora la tecla **H** activará la acción de disparo definida en el código.
 
 ## Ejercicio 8
+
+El objeto se mueve constantemente en una dirección determinada. Si `localSpace` es `true`, se mueve según su propia orientación; si es `false`, se mueve en el espacio global.
 
 ```csharp
 using UnityEngine;
@@ -222,6 +242,8 @@ public class Ej_8 : MonoBehaviour
 
 ## Ejercicio 9
 
+Permite mover el objeto usando las teclas **WASD** si `sphere` es `true`, o las **flechas** si es `false`. El movimiento no depende del tiempo, por lo que la velocidad puede variar según el framerate.
+
 ```csharp
 using UnityEngine;
 
@@ -255,6 +277,8 @@ public class Ej_9 : MonoBehaviour
 ```
 
 ## Ejercicio 10
+
+Similar al Ejercicio 9, pero el movimiento ahora está multiplicado por `Time.deltaTime`, haciendo que la velocidad sea constante independientemente del framerate.
 
 ```csharp
 using UnityEngine;
@@ -290,6 +314,8 @@ public class Ej_10 : MonoBehaviour
 
 ## Ejercicio 11
 
+El objeto se mueve automáticamente hacia la posición de una esfera (`esferaTransform`) ignorando la diferencia en el eje Y. Simula un “seguimiento” constante.
+
 ```csharp
 using UnityEngine;
 
@@ -314,6 +340,8 @@ public class Ej_11 : MonoBehaviour
 
 ## Ejercicio 12
 
+El objeto siempre **mira hacia la esfera** y avanza hacia ella a una velocidad constante, rotando suavemente para orientarse en su dirección.
+
 ```csharp
 using UnityEngine;
 
@@ -334,6 +362,8 @@ public class Ej_12 : MonoBehaviour
 ```
 
 ## Ejercicio 13
+
+El objeto avanza continuamente hacia adelante y gira según el eje horizontal (izquierda/derecha). Además, dibuja una línea roja (raycast visual) para indicar su dirección actual.
 
 ```csharp
 using UnityEngine;
